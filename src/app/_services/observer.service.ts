@@ -5,7 +5,7 @@ import { BehaviorSubject } from 'rxjs';
   providedIn: 'root'
 })
 export class ObserverService {
-  private dataSource = new BehaviorSubject<any>({name: 'Rohit Shrestha'});
+  private dataSource = new BehaviorSubject<object>({name: 'Rohit Shrestha'});
   data = this.dataSource.asObservable();
   constructor() { }
 
